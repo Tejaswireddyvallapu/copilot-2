@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #6495ed;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .header button {
+            background-color: #008cba;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .product {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .product img {
+            width: 200px;
+            height: 200px;
+        }
+        .footer {
+            background-color: #6495ed;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            margin: 0 auto;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button style="background-color: #0000FF;" onclick="location.href='#'">Home</button>
+        <button style="background-color: #0000FF;" onclick="location.href='#'">Product</button>
+    </div>
+    <div class="product">
+        <img src="food.jpg" alt="Food Image">
+        <div>
+            <h2>Food Name</h2>
+            <p>Description of the food product...</p>
+        </div>
+    </div>
+    <form>
+        <h2>Contact Us</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Name">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Message"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    <div class="footer" style="background-color: #0000FF;">
+        &copy; 2022 Food Company
+    </div>
+</body>
+</html>
